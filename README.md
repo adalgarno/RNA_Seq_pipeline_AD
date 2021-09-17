@@ -25,7 +25,9 @@ analysis) for the samples in sample_names.txt
 there will be three separate rows. First, test, then sample_two, then sample_one. The names used should correspond to those in the group_names.txt file.
 It would be good to have informative names for the contrasts, as these will become their file names.
 For this example the file would look like this:
-test \n sample_two \n sample_one
+test  
+sample_two  
+sample_one  
 
 To run the pipeline:
 The pipeline runs off of one command:
