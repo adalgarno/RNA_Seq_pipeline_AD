@@ -32,7 +32,7 @@ sample_one
 To run the pipeline:
 The pipeline runs off of one command:
 
-sbatch run_main.sh project_path genome_path [0/1]
+sbatch run_main.sh project_path/ genome_path/ 0
 
 the arguements are 1) path to fastq.gz files/sample_names.txt/group_names.txt/contrasts.txt 2) path to STAR idx 3) 0 or 1, corresponds to if the data is
 single-read (0) or paired-end (1)
