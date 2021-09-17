@@ -23,10 +23,9 @@ when you ls!!!!!
 analysis) for the samples in sample_names.txt
 5. Create a file called contrasts.txt in project_path. This file should also be one column. For any given contrast, for example, test = sample_two - sample_one,
 there will be three separate rows. First, test, then sample_two, then sample_one. The names used should correspond to those in the group_names.txt file.
+It would be good to have informative names for the contrasts, as these will become their file names.
 For this example the file would look like this:
-test
-sample_two
-sample_one
+test \n sample_two \n sample_one
 
 To run the pipeline:
 The pipeline runs off of one command:
