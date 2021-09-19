@@ -14,7 +14,7 @@ conda activate RNA_Seq_pipeline_AD
 
 htseq-count \
 -m union \
--r name \
+-r pos \
 -a 10 \
 -i gene_id \
 -f bam ${STAR_output_path}*.bam ${genome_path}*.gtf > ${HTSeq_output_path}ft_counts.txt
