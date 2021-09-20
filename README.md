@@ -24,7 +24,7 @@ analysis) for the samples in sample_names.txt
 5. Create a file called contrasts.txt in project_path. This file should also be one column. For any given contrast, for example, test = sample_two - sample_one,
 there will be three separate rows. First, test, then sample_two, then sample_one. The names used should correspond to those in the group_names.txt file.
 It would be good to have informative names for the contrasts, as these will become their file names.
-For this example the file would look like this:
+For this example the file would look like this:  
 test  
 sample_two  
 sample_one  
@@ -32,8 +32,8 @@ sample_one
 To run the pipeline:
 The pipeline runs off of one command:
 
-sbatch run_main.sh project_path/ genome_path/ 0
+sbatch run_main.sh project_path/ genome_path/ 0 yes
 
 the arguements are 1) path to fastq.gz files/sample_names.txt/group_names.txt/contrasts.txt 2) path to STAR idx 3) 0 or 1, corresponds to if the data is
-single-read (0) or paired-end (1)
+single-read (0) or paired-end (1) 4) strandedness of library (yes/no/reverse according to https://htseq.readthedocs.io/en/release_0.11.1/count.html)
 

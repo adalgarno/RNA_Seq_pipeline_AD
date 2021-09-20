@@ -30,7 +30,8 @@
 #path to fastq
 #path to genome idx
 #paired or singe end (0 = single, 1 = paired)
-#sbatch run_main path_to_fastq/ path_to_genome_idx/ 0
+#strandedness -- options according to htseq documentation (default = yes; no; reverse) https://htseq.readthedocs.io/en/release_0.11.1/count.html
+#sbatch run_main path_to_fastq/ path_to_genome_idx/ 0 yes
 
  
 #DEFINE PATHS AND VARIABLES ####################################################
@@ -61,6 +62,10 @@ export genome_path
 #is paired end?
 is_paired_end=$3
 export is_paired_end
+
+#strandedness
+strandedness=$4
+export strandedness
 
 #ini job ID 1
 jobID_1=0
